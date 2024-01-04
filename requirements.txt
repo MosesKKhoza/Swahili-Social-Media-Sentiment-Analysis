@@ -1,0 +1,18 @@
+numpy==1.25.2
+pandas==2.1.0
+tensorflow==2.13.0
+transformers==4.10.0
+scikit-learn==1.3.0
+
+# Optional for Performance Boost on Intel® Platforms (i.e., with no GPU)
+# Intel® distribution for Python (near-native code performance)
+# Available at: https://software.intel.com/content/www/us/en/develop/tools/distribution-for-python.html
+
+# Intel®'s accelerated version of scikit-learn
+# Install using: pip install scikit-learn-intelex
+# Apply global patching: python -m sklearnex.glob patch_sklearn
+
+# Modin for accelerated data analysis
+# Install using: pip install modin[ray]  # Install Modin dependencies and Ray for parallelism
+#                pip install modin[dask]  # Install Modin dependencies and Dask for parallelism
+#                pip install modin[all]  # Install all of the above
